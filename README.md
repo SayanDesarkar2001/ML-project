@@ -18,8 +18,6 @@
 14. **solar_panel**: Whether solar panels are installed.
 15. **target_high_usage**: Whether the household is targeted for high usage.
 
-
-
 **Operations performed on the dataset:**
 
 1.  **Data Loading (`pd.read_csv()`):**
