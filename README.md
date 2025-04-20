@@ -18,6 +18,7 @@
 14. **solar_panel**: Whether solar panels are installed.
 15. **target_high_usage**: Whether the household is targeted for high usage.
 
+# Operations performed on the dataset:
 
 1.  **Data Loading (`pd.read_csv()`):**
     * The code starts by loading the energy dataset from a CSV file into a pandas DataFrame. This is the standard way to ingest tabular data in Python for data analysis and machine learning.
