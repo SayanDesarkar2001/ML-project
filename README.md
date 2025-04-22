@@ -67,6 +67,7 @@
     * **Parameter Grids (rf_param_grid, dt_param_grid):** Dictionaries defining the hyperparameters and their possible values to be tested by GridSearchCV.
     * **Fitting GridSearchCV:** The fit() method of GridSearchCV trains and evaluates the model for every combination of hyperparameters in the grid using cross-validation (here, cv=3).
     * **Best Model Extraction (best_estimator_):** The best_estimator_ attribute of the fitted GridSearchCV object provides the model (pipeline in this case) with the best hyperparameters found.
+   <img width="693" alt="image" src="https://github.com/user-attachments/assets/35ff2c57-b54f-4c8b-9ce6-4a96e589f014" />
 
 8.  **Evaluation of Tuned Models on Unseen Data:**
     * The best_pipeline (the tuned model within the pipeline, including the scaler) for both Random Forest and Decision Tree is used to make predictions on the scaled unseen test data (X_unseen_scaled).
