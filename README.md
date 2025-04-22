@@ -41,6 +41,8 @@
         * **df['household_size'].value_counts().plot(kind='bar'):** Shows the distribution of household sizes.
         * These visualizations provide insights into the data's distribution, potential outliers (though outliers are removed before this), and relationships between variables.
    <img width="741" alt="image" src="https://github.com/user-attachments/assets/e56cc9ff-d96e-4d39-9c87-2fc3efd3aeee" />
+   <img width="769" alt="Screenshot 2025-04-22 131552" src="https://github.com/user-attachments/assets/dc65a432-a681-4686-ba4e-c9e001a1ee4b" />
+
 
 4.  **Data Splitting (train_test_split()):**
     * The dataset is split into training and testing sets. The test_size=0.3 indicates that 30% of the data is reserved for testing, and random_state=42 ensures reproducibility of the split.
