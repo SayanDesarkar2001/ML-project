@@ -43,7 +43,6 @@
    <img width="741" alt="image" src="https://github.com/user-attachments/assets/e56cc9ff-d96e-4d39-9c87-2fc3efd3aeee" />
    <img width="769" alt="Screenshot 2025-04-22 131552" src="https://github.com/user-attachments/assets/dc65a432-a681-4686-ba4e-c9e001a1ee4b" />
 
-
 4.  **Data Splitting (train_test_split()):**
     * The dataset is split into training and testing sets. The test_size=0.3 indicates that 30% of the data is reserved for testing, and random_state=42 ensures reproducibility of the split.
     * The test set is further split into a validation set (for initial model evaluation as a proxy for tuning) and an unseen test set for the final evaluation of the trained pipelines.
@@ -59,6 +58,8 @@
     * Each model is trained on the scaled training data (X_train_scaled, y_train).
     * Predictions are made on the scaled validation data (X_val_scaled).
     * The performance of each model is evaluated using Mean Squared Error (mean_squared_error) and R-squared (r2_score).
+   <img width="707" alt="image" src="https://github.com/user-attachments/assets/252dfa12-3789-475c-9056-6f760121fa91" />
+
 
 7.  **Hyperparameter Tuning with GridSearchCV() (for Random Forest and Decision Tree):**
     * GridSearchCV is used to systematically search for the best combination of hyperparameters for the Random Forest and Decision Tree models.
