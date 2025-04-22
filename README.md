@@ -40,7 +40,7 @@
         * **df.groupby(...).plot(kind='bar'):** Creates bar plots to visualize aggregated data based on categorical features like 'region' and 'income\_bracket'. This helps in understanding the relationship between these categories and energy consumption or billing amount.
         * **df['household_size'].value_counts().plot(kind='bar'):** Shows the distribution of household sizes.
         * These visualizations provide insights into the data's distribution, potential outliers (though outliers are removed before this), and relationships between variables.
-<img width="741" alt="image" src="https://github.com/user-attachments/assets/e56cc9ff-d96e-4d39-9c87-2fc3efd3aeee" />
+   <img width="741" alt="image" src="https://github.com/user-attachments/assets/e56cc9ff-d96e-4d39-9c87-2fc3efd3aeee" />
 
 4.  **Data Splitting (train_test_split()):**
     * The dataset is split into training and testing sets. The test_size=0.3 indicates that 30% of the data is reserved for testing, and random_state=42 ensures reproducibility of the split.
