@@ -40,8 +40,8 @@
         * **df.groupby(...).plot(kind='bar'):** Creates bar plots to visualize aggregated data based on categorical features like 'region' and 'income\_bracket'. This helps in understanding the relationship between these categories and energy consumption or billing amount.
         * **df['household_size'].value_counts().plot(kind='bar'):** Shows the distribution of household sizes.
         * These visualizations provide insights into the data's distribution, potential outliers (though outliers are removed before this), and relationships between variables.
-   <img width="741" alt="image" src="https://github.com/user-attachments/assets/e56cc9ff-d96e-4d39-9c87-2fc3efd3aeee" />
-   <img width="769" alt="Screenshot 2025-04-22 131552" src="https://github.com/user-attachments/assets/dc65a432-a681-4686-ba4e-c9e001a1ee4b" />
+          <img width="741" alt="image" src="https://github.com/user-attachments/assets/e56cc9ff-d96e-4d39-9c87-2fc3efd3aeee" />
+          <img width="769" alt="Screenshot 2025-04-22 131552" src="https://github.com/user-attachments/assets/dc65a432-a681-4686-ba4e-c9e001a1ee4b" />
 
 4.  **Data Splitting (train_test_split()):**
     * The dataset is split into training and testing sets. The test_size=0.3 indicates that 30% of the data is reserved for testing, and random_state=42 ensures reproducibility of the split.
@@ -58,7 +58,7 @@
     * Each model is trained on the scaled training data (X_train_scaled, y_train).
     * Predictions are made on the scaled validation data (X_val_scaled).
     * The performance of each model is evaluated using Mean Squared Error (mean_squared_error) and R-squared (r2_score).
-   <img width="707" alt="image" src="https://github.com/user-attachments/assets/252dfa12-3789-475c-9056-6f760121fa91" />
+      <img width="707" alt="image" src="https://github.com/user-attachments/assets/252dfa12-3789-475c-9056-6f760121fa91" />
 
 
 7.  **Hyperparameter Tuning with GridSearchCV() (for Random Forest and Decision Tree):**
@@ -67,7 +67,7 @@
     * **Parameter Grids (rf_param_grid, dt_param_grid):** Dictionaries defining the hyperparameters and their possible values to be tested by GridSearchCV.
     * **Fitting GridSearchCV:** The fit() method of GridSearchCV trains and evaluates the model for every combination of hyperparameters in the grid using cross-validation (here, cv=3).
     * **Best Model Extraction (best_estimator_):** The best_estimator_ attribute of the fitted GridSearchCV object provides the model (pipeline in this case) with the best hyperparameters found.
-   <img width="693" alt="image" src="https://github.com/user-attachments/assets/35ff2c57-b54f-4c8b-9ce6-4a96e589f014" />
+      <img width="693" alt="image" src="https://github.com/user-attachments/assets/35ff2c57-b54f-4c8b-9ce6-4a96e589f014" />
 
 8.  **Evaluation of Tuned Models on Unseen Data:**
     * The best_pipeline (the tuned model within the pipeline, including the scaler) for both Random Forest and Decision Tree is used to make predictions on the scaled unseen test data (X_unseen_scaled).
