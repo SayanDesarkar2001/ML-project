@@ -72,6 +72,7 @@
 8.  **Evaluation of Tuned Models on Unseen Data:**
     * The best_pipeline (the tuned model within the pipeline, including the scaler) for both Random Forest and Decision Tree is used to make predictions on the scaled unseen test data (X_unseen_scaled).
     * The performance on this truly held-out data is evaluated using MSE and R-squared to estimate the model's generalization ability.
+      <img width="689" alt="image" src="https://github.com/user-attachments/assets/47306bd3-07a2-442c-8916-dca2f19c629e" />
 
 9.  **Model Saving (joblib.dump()):**
     * The joblib library is used to save the trained best_pipeline for both Random Forest and Decision Tree to disk. This allows you to load and reuse the trained models later without retraining.
